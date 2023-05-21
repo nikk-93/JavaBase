@@ -50,6 +50,8 @@ public class task1 {
                 return;
         }
 
+        scanner.close();
+
         List<NoteBook> filteredNotebooks = filterNotebooks(notebooks, filterParams);
         if (filteredNotebooks.isEmpty()) {
             System.out.println("Нет ноутбуков, удовлетворяющих заданным критериям.");
